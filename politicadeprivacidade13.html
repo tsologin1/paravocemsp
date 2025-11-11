@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Política de Privacidade — Para Você em SP</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --fundo:#fff;
+  --texto:#111;
+  --accent:#ff7f50;
+  --cinza-claro:#f6f6f6;
+  --muted:#6b6b6b;
+  --card:#fbfbfb;
+  --radius:12px;
+  --sombra:0 6px 20px rgba(15,15,15,0.06);
+  --fonte-principal:'Inter',sans-serif;
+  --fonte-titulo:'Playfair Display',serif;
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:var(--fonte-principal); color:var(--texto); background:var(--fundo); line-height:1.6;}
+
+/* HEADER */
+.cabecalho{position:fixed;top:0;left:0;right:0; background:var(--fundo); box-shadow:0 1px 8px rgba(0,0,0,0.03); z-index:1200;}
+.menu-centro{max-width:1200px;margin:0 auto;padding:1rem 1.25rem;display:flex;align-items:center;justify-content:space-between;}
+.logo{font-family:var(--fonte-titulo);font-size:1.15rem;font-weight:600;}
+.pequeno-link{font-size:0.95rem;color:var(--muted);text-decoration:none;}
+
+/* CONTEÚDO */
+.container{max-width:1100px;margin:110px auto 80px;padding:1.25rem;}
+.titulo{font-family:var(--fonte-titulo);font-size:2rem;margin-bottom:6px;}
+.metadados{color:var(--muted);font-size:.95rem;margin-bottom:1.6rem;}
+
+/* GRID */
+.layout{display:grid;grid-template-columns:1fr 360px;gap:32px;}
+@media(max-width:980px){.layout{grid-template-columns:1fr;}}
+
+/* CARTÕES */
+.cartao{background:var(--card);border-radius:var(--radius);padding:16px;box-shadow:var(--sombra);margin-bottom:16px;}
+.secao h3{font-family:var(--fonte-titulo);font-size:1.05rem;margin-bottom:8px;}
+.secao p,.secao li{color:var(--muted);font-size:1rem;margin-bottom:10px;}
+.lista{padding-left:1.1rem;color:var(--muted);}
+.lista li{margin-bottom:6px;}
+
+/* MINI GRÁFICO BARRAS */
+.graf{display:flex;gap:12px;align-items:flex-end;height:160px;width:200px;margin:auto;}
+.graf div{width:30px;border-radius:6px;transition:.5s;}
+.g1{height:60px;background: var(--accent);} .g2{height:110px;background: #50a0ff;} .g3{height:150px;background: var(--accent);} .g4{height:95px;background: #50a0ff;} .g5{height:75px;background: #cfcfcf;}
+
+/* TIMELINE */
+.escopo{display:flex;flex-direction:column;gap:12px;}
+.passo{display:flex;gap:12px;}
+.circ{width:36px;height:36px;border-radius:50%;background:var(--cinza-claro);display:flex;align-items:center;justify-content:center;font-weight:600;color:var(--muted);}
+.passo p{margin:0;color:var(--muted);font-size:.95rem;}
+
+/* BOTÕES */
+.botoes-cookie{display:flex;gap:8px;justify-content:center;margin-top:8px;}
+.btn{padding:8px 12px;border-radius:8px;border:1px solid rgba(0,0,0,0.06);background:#fff;cursor:pointer;font-weight:600;font-size:.95rem;}
+.btn.aceitar{background:var(--accent);color:white;border:none;}
+.btn.recusar{background:#fff;color:var(--texto);}
+
+/* LEGENDA PIZZA */
+#legenda{display:flex;flex-direction:column;gap:6px;font-size:0.85rem;margin-top:16px;text-align:left;}
+.item-legenda{display:flex;align-items:center;gap:8px;}
+.cor-legenda{width:14px;height:14px;border-radius:50%;display:inline-block;}
+.cor-legenda.funcional{background:var(--accent);}
+.cor-legenda.analiticos{background:#50a0ff;}
+.cor-legenda.outros{background:#cfcfcf;}
+
+/* RODAPÉ */
+.rodape{margin-top:30px;border-top:1px solid #eee;padding-top:18px;color:var(--muted);font-size:.92rem;text-align:center;}
+</style>
+</head>
+
+<body>
+
+<header class="cabecalho">
+  <div class="menu-centro">
+    <div class="logo">Para Você em SP</div>
+    <a class="pequeno-link" href="index.html">← Voltar ao site</a>
+  </div>
+</header>
+
+<main class="container">
+  <h1 class="titulo">Política de Privacidade — Para Você em SP</h1>
+  <div class="metadados">Última atualização: 03 de novembro de 2025</div>
+
+  <div class="layout">
+    <section>
+      <article class="cartao secao">
+        <p>A sua privacidade é importante para nós. Esta Política de Privacidade explica como coletamos, usamos, protegemos e compartilhamos informações pessoais de visitantes e assinantes do blog <strong>Para Você em SP.</strong></p>
+      </article>
+
+      <div class="secao cartao">
+        <h3>1. Informações que coletamos</h3>
+        <p>Este site pode coletar dados mínimos de navegação para melhorar sua experiência e manter funcionalidades essenciais.</p>
+        <ul class="lista">
+          <li>Cookies essenciais para funcionamento</li>
+          <li>Dados de navegação anônimos</li>
+          <li>Informações fornecidas voluntariamente (ex.: formulário de contato)</li>
+        </ul>
+      </div>
+
+      <div class="secao cartao">
+        <h3>2. Como utilizamos seus dados</h3>
+        <p>Usamos as informações coletadas apenas para:</p>
+        <ul class="lista">
+          <li>Garantir o funcionamento adequado do site</li>
+          <li>Melhorar conteúdo e experiência do usuário</li>
+          <li>Comunicação quando solicitado pelo usuário</li>
+        </ul>
+      </div>
+
+      <div class="secao cartao">
+        <h3>3. Cookies e tecnologias similares</h3>
+        <p>Utilizamos cookies para lembrar preferências, melhorar navegação e analisar visitas de forma anônima.</p>
+        <p>Você pode aceitar ou recusar o uso de cookies a qualquer momento.</p>
+      </div>
+
+      <div class="secao cartao">
+        <h3>4. Compartilhamento de dados</h3>
+        <p>Não vendemos ou compartilhamos dados pessoais.</p>
+        <p>Dados podem ser compartilhados apenas com serviços essenciais, como hospedagem e análise anônima de tráfego.</p>
+      </div>
+
+      <div class="secao cartao">
+        <h3>5. Direitos do usuário</h3>
+        <p>Você tem direito de:</p>
+        <ul class="lista">
+          <li>Solicitar remoção de informações enviadas voluntariamente</li>
+          <li>Gerenciar cookies</li>
+          <li>Solicitar informações sobre o uso de dados</li>
+        </ul>
+      </div>
+
+      <div class="secao cartao">
+        <h3>6. Armazenamento e segurança</h3>
+        <p>Adotamos medidas de segurança para proteger seus dados e não armazenamos informações pessoais sensíveis neste site.</p>
+      </div>
+
+      <div class="secao cartao">
+        <h3>7. Contato</h3>
+        <p>Se tiver dúvidas sobre esta Política de Privacidade, entre em contato:</p>
+        <p><strong>Email:</strong> contato@paravoceemsp.com</p>
+      </div>
+    </section>
+
+    <aside>
+      <div class="cartao" id="grafico-visao-geral">
+        <div class="cartao-titulo">Visão geral</div>
+        <div class="graf">
+          <div class="g1"></div><div class="g2"></div><div class="g3"></div><div class="g4"></div><div class="g5"></div>
+        </div>
+        <div id="legenda" aria-hidden="true">
+          <div class="item-legenda"><span class="cor-legenda funcional"></span> Funcionais (66%)</div>
+          <div class="item-legenda"><span class="cor-legenda analiticos"></span> Analíticos (22%)</div>
+          <div class="item-legenda"><span class="cor-legenda outros"></span> Outros (12%)</div>
+        </div>
+      </div>
+
+      <div class="cartao">
+        <div class="cartao-titulo" style="margin-bottom: 10px;">Como tratamos dados</div>
+        <div class="escopo">
+          <div class="passo"><div class="circ">1</div><p>Coleta</p></div>
+          <div class="passo"><div class="circ">2</div><p>Uso e proteção</p></div>
+          <div class="passo"><div class="circ">3</div><p>Compartilhamento restrito</p></div>
+        </div>
+      </div>
+
+      <div class="cartao" id="controle-cookies">
+        <div class="cartao-titulo" style="margin-bottom: 10px;">Seu controle</div>
+        <p class="texto-controle">Você decide — aceitar ou recusar cookies.</p>
+        <div class="botoes-cookie" style="margin-bottom: 10px; margin-top: 10px;">
+          <button class="btn recusar">Recusar</button>
+          <button class="btn aceitar">Aceitar</button>
+        </div>
+        <div id="status-cookie">Estado: sem escolha</div>
+      </div>
+    </aside>
+  </div>
+
+  <div class="rodape">© 2025 Para Você em SP</div>
+</main>
+
+<script>
+// Função para gerenciar cookies
+(function(){
+  const btnAceitar = document.querySelector("#controle-cookies .btn.aceitar");
+  const btnRecusar = document.querySelector("#controle-cookies .btn.recusar");
+  const status = document.getElementById("status-cookie");
+
+  function atualizarStatus(valor) {
+    status.textContent = `Estado: ${valor}`;
+  }
+
+  btnAceitar.addEventListener("click", () => atualizarStatus("cookies aceitos ✅"));
+  btnRecusar.addEventListener("click", () => atualizarStatus("cookies recusados ❌"));
+})();
+</script>
+
+</body>
+</html>

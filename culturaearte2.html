@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Para Você em SP</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Fontes -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+
+  <!-- Script para menu mobile -->
+  <script>
+    function abrirMenu() {
+      document.querySelector("nav").classList.toggle("mostrar");
+    }
+  </script>
+</head>
+
+<body>
+
+  <!-- CABEÇALHO -->
+  <header id="cabecalho">
+    <div class="menu-principal">
+      <div class="logo">Para Você em SP</div>
+
+      <div class="botao-menu" onclick="abrirMenu()">☰</div>
+
+      <nav id="navegacao">
+        <ul class="responsividade">
+          <li><a href="gastronomia1.html">Gastronomia</a></li>
+          <li><a href="culturaearte2.html">Cultura e Arte</a></li>
+          <li><a href="naturezaebemestar3.html">Natureza e Bem-estar</a></li>
+          <li><a href="dicassp4.html">Dicas Locais</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- SEÇÃO HERO -->
+  <section class="hero">
+    <h1>Explorando São Paulo com estilo e calma</h1>
+    <p>Curadoria de experiências, cafés, eventos e lugares únicos para você viver uma São Paulo mais leve, bonita e interessante.</p>
+  </section>
+
+  <!-- SEÇÃO POSTS -->
+  <section class="posts" id="gastronomia">
+
+    <!-- POST 1 -->
+    <a href="postmuseu7.html" class="post">
+      <img src="img/museuipiranga.png" alt="Museus de São Paulo">
+      <div class="conteudo-post">
+        <h3>Melhores museus de São Paulo</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis cumque similique repellendus voluptatibus sit mollitia.</p>
+      </div>
+    </a>
+
+    <!-- POST 2 -->
+    <a href="postorquestra8.html" class="post">
+      <img src="img/orquestra.jpg" alt="Orquestra Sinfônica de São Paulo">
+      <div class="conteudo-post">
+        <h3>Como assistir à Orquestra Sinfônica do Estado de São Paulo gratuitamente</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidu.</p>
+      </div>
+    </a>
+
+  </section>
+
+
+  <!-- RODAPÉ -->
+  <footer id="rodape" style="text-align: center;">
+    <!-- Redes sociais futuramente -->
+    <!--
+    <div class="redes-sociais">
+      <a href="#"></a>
+      <a href="#"></a>
+      <a href="#"></a>
+    </div>
+    -->
+    <div class="direitos">© 2025 Para Você em SP — todos os direitos reservados</div>
+  </footer>
+
+</body>
+</html>

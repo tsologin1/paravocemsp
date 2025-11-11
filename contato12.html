@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Contato — Para Você em SP</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --fundo:#fff;
+  --texto:#111;
+  --muted:#707070;
+  --destaque:#ff7f50;
+  --borda:#e5e5e5;
+  --fundo-card:#fafafa;
+  --sombra:0 4px 18px rgba(0,0,0,0.06);
+  --radius:12px;
+  --fonte:'Inter', sans-serif;
+  --fonte-titulo:'Playfair Display', serif;
+}
+
+*{margin:0;padding:0;box-sizing:border-box;}
+
+body{
+  font-family:var(--fonte);
+  background:var(--fundo);
+  color:var(--texto);
+}
+
+/* CABEÇALHO */
+.cabecalho{
+  background:var(--fundo);
+  padding:1rem 1.25rem;
+  box-shadow:0 1px 8px rgba(0,0,0,0.04);
+  position:fixed;top:0;left:0;right:0;
+  z-index:100;
+}
+.menu-centro{
+  max-width:1200px;margin:auto;
+  display:flex;justify-content:space-between;align-items:center;
+}
+.logo{
+  font-family:var(--fonte-titulo);
+  font-weight:600;font-size:1.2rem;
+}
+.link-voltar{
+  font-size:.95rem;color:var(--muted);
+  text-decoration:none;
+}
+
+/* CONTEÚDO */
+.container{
+  max-width:700px;margin:120px auto 40px;padding:1.25rem;
+}
+.titulo{
+  font-family:var(--fonte-titulo);
+  font-size:2rem;margin-bottom:.5rem;
+}
+.texto-explica{
+  font-size:1rem;color:var(--muted);margin-bottom:1.4rem;
+}
+
+/* FORM */
+.formulario{
+  background:var(--fundo-card);
+  padding:1.5rem;border-radius:var(--radius);
+  box-shadow:var(--sombra);
+}
+.campo{
+  display:flex;flex-direction:column;margin-bottom:1rem;
+}
+label{
+  font-size:.92rem;margin-bottom:6px;font-weight:500;
+}
+input,textarea{
+  padding:.85rem;border:1px solid var(--borda);
+  border-radius:10px;font-size:1rem;
+}
+textarea{min-height:130px;resize:vertical;}
+
+.botao-enviar{
+  width:100%;padding:.9rem;border:none;
+  background:var(--destaque);color:white;
+  border-radius:10px;font-weight:600;
+  font-size:1rem;cursor:pointer;transition:.25s;
+}
+.botao-enviar:active{
+  transform:scale(.97);
+  background:#ff9168;
+}
+
+/* RODAPÉ */
+.rodape{
+  text-align:center;margin-top:32px;
+  font-size:.9rem;color:var(--muted);
+}
+</style>
+</head>
+
+<body>
+
+<header class="cabecalho">
+  <div class="menu-centro">
+    <div class="logo">Para Você em SP</div>
+    <a href="index.html" class="link-voltar">← Voltar</a>
+  </div>
+</header>
+
+<main class="container">
+  
+  <h1 class="titulo">Entre em Contato</h1>
+  <p class="texto-explica">Envie sua mensagem, sugestão ou recomendação de lugar em São Paulo! 😊</p>
+
+  <form class="formulario">
+    
+    <div class="campo">
+      <label>Seu nome</label>
+      <input type="text" placeholder="Digite seu nome">
+    </div>
+
+    <div class="campo">
+      <label>Seu email</label>
+      <input type="email" placeholder="nome@email.com">
+    </div>
+
+    <div class="campo">
+      <label>Sua mensagem</label>
+      <textarea placeholder="Escreva aqui..."></textarea>
+    </div>
+
+    <button class="botao-enviar">Enviar mensagem</button>
+
+  </form>
+
+  <div class="rodape">© 2025 Para Você em SP</div>
+
+</main>
+
+</body>
+</html>

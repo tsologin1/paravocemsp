@@ -1,0 +1,269 @@
+/* =============================== */
+/* VARIÁVEIS GERAIS DE CORES E FONTES */
+/* =============================== */
+:root {
+  --fundo: #ffffff;
+  --texto: #111111;
+  --cinza: #f2f2f2;
+  --fonte-principal: 'Inter', sans-serif;
+  --fonte-titulo: 'Playfair Display', serif;
+  --cor-link-hover: #ff7f50;
+}
+
+/* =============================== */
+/* RESET E ESTILOS BASE */
+/* =============================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--fonte-principal);
+  background: var(--fundo);
+  color: var(--texto);
+  line-height: 1.6;
+}
+
+/* =============================== */
+/* NAVEGAÇÃO COMUM PARA POSTAGENS */
+/* =============================== */
+
+.cabecalho-post, .menu-principal {
+  width: 100%;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: var(--fundo);
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cabecalho-post .logo, .menu-principal .logo {
+  font-family: var(--fonte-titulo);
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--texto);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.8rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--texto);
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: var(--cor-link-hover);
+}
+
+.botao-menu {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+@media (max-width: 832px) {
+  .responsividade{
+    display: block;
+  }
+}
+
+
+@media (max-width: 768px) {
+  nav {
+    display: none;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    background: var(--fundo);
+    width: 100%;
+    border-top: 1px solid #eee;
+    padding: 1rem 0;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+  nav.mostrar {
+    display: flex;
+    animation: surgir 0.3s ease;
+  }
+  @keyframes surgir {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .botao-menu { display: block; }
+}
+
+/* =============================== */
+/* ESTILIZAÇÃO DA PÁGINA INDEX */
+/* =============================== */
+.hero {
+  max-width: 1200px;
+  margin: auto;
+  padding: 8rem 1.5rem 3rem;
+  text-align: center;
+}
+
+.hero h1 {
+  font-family: var(--fonte-titulo);
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.hero p {
+  max-width: 700px;
+  margin: auto;
+  font-size: 1.2rem;
+  opacity: 0.8;
+}
+
+.posts {
+  max-width: 1200px;
+  margin: auto;
+  padding: 2rem 1.5rem 5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.post {
+  background: var(--cinza);
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: 0.2s;
+  text-decoration: none;
+  color: black;
+}
+
+.post:hover {
+  transform: translateY(-4px);
+}
+
+.post img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.conteudo-post {
+  padding: 1.5rem;
+}
+
+.conteudo-post h3 {
+  font-family: var(--fonte-titulo);
+  font-size: 1.5rem;
+  margin-bottom: 0.8rem;
+}
+
+/* =============================== */
+/* FOOTER INDEX */
+/* =============================== */
+.rodape-index {
+  background: var(--fundo);
+  width: 100%;
+  padding: 3rem 1.5rem;
+}
+
+.redes-sociais {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.redes-sociais a {
+  color: var(--texto);
+  font-size: 1.5rem;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.redes-sociais a:hover {
+  color: var(--cor-link-hover);
+}
+
+.direitos {
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+/* =============================== */
+/* ESTILIZAÇÃO DE POSTAGENS (POST 01, 02...) */
+/* =============================== */
+.container-post {
+  max-width: 800px;
+  margin: 8rem auto 4rem;
+  padding: 0 1.5rem;
+}
+
+.titulo-post {
+  font-family: var(--fonte-titulo);
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.info-post {
+  font-size: 0.95rem;
+  opacity: 0.75;
+  margin-bottom: 1.8rem;
+}
+
+.img-capa {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+}
+
+.container-post p {
+  font-size: 1.08rem;
+  margin-bottom: 1.3rem;
+}
+
+.voltar {
+  margin-top: 2.5rem;
+  display: inline-block;
+  text-decoration: none;
+  color: var(--texto);
+  font-weight: 500;
+  padding-bottom: 2px;
+  border-bottom: 1px solid #ddd;
+  transition: .3s;
+}
+
+.voltar:hover {
+  color: var(--cor-link-hover);
+}
+
+/* FOOTER POSTAGENS */
+.rodape-post {
+  background: var(--fundo);
+  padding: 3rem 1.5rem;
+  text-align: center;
+  border-top: 1px solid #eee;
+}
+
+
+/* =============================== */
+/* LINKS DE POSTAGENS (POST 01, 02...) */
+/* =============================== */
+
+.links-posts{
+  text-decoration: none; color: black;
+}
